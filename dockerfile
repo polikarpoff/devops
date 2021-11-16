@@ -1,6 +1,8 @@
 # Собирает образ для контейнера с сервисом получения времени.
 FROM golang:1.9
 
+ENV TZ="Europe/Moscow"
+
 WORKDIR /opt/go/time-service
 
 EXPOSE 8080
